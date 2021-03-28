@@ -29,28 +29,27 @@ public class Main {
             NodeList list = (NodeList) result;
             for(int i=0; i<list.getLength();i++){
                 Node node= (Node)list.item(i);
-                System.out.print(node.getTextContent());
-//                    System.out.println("Book:");
-//                    System.out.println("id: "+list.item(i).getAttributes().getNamedItem("id").getNodeValue());
-//                    XPathExpression exp1 = path.compile("author"); 
-//                    String author = exp1.evaluate(list.item(i));
-//                    System.out.println("Author: "+author);
-//                    XPathExpression exp2 = path.compile("title"); 
-//                    String title = exp2.evaluate(list.item(i));
-//                    System.out.println("Title: "+title);
-//                    XPathExpression exp3 = path.compile("genre"); 
-//                    String genre = exp3.evaluate(list.item(i));
-//                    System.out.println("Genre: "+genre);
-//                    XPathExpression exp4 = path.compile("price");
-//                    String price = exp4.evaluate(list.item(i));
-//                    System.out.println("Price: "+price);
-//                    XPathExpression exp5 = path.compile("publish_date"); 
-//                    String date = exp5.evaluate(list.item(i));
-//                    System.out.println("Publish date:"+date);
-//                    XPathExpression exp6 = path.compile("description"); 
-//                    String desc = exp6.evaluate(list.item(i));
-//                    System.out.println("Description: "+ desc);
-//                    System.out.println("------------------------------------------");
+                    System.out.println("Book:");
+                    System.out.println("id: "+list.item(i).getAttributes().getNamedItem("id").getNodeValue());
+                    XPathExpression exp1 = path.compile("author"); 
+                    String author = exp1.evaluate(list.item(i));
+                    System.out.println("Author: "+author);
+                    XPathExpression exp2 = path.compile("title"); 
+                    String title = exp2.evaluate(list.item(i));
+                    System.out.println("Title: "+title);
+                    XPathExpression exp3 = path.compile("genre"); 
+                    String genre = exp3.evaluate(list.item(i));
+                    System.out.println("Genre: "+genre);
+                    XPathExpression exp4 = path.compile("price");
+                    String price = exp4.evaluate(list.item(i));
+                    System.out.println("Price: "+price);
+                    XPathExpression exp5 = path.compile("publish_date"); 
+                    String date = exp5.evaluate(list.item(i));
+                    System.out.println("Publish date:"+date);
+                    XPathExpression exp6 = path.compile("description"); 
+                    String desc = exp6.evaluate(list.item(i));
+                    System.out.println("Description: "+ desc);
+                    System.out.println("------------------------------------------");
     }
             }
     }
